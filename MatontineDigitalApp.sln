@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatontineDigitalApp", "MatontineDigitalApp.csproj", "{3C433127-2A03-4B41-B0CF-74D763E82BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C433127-2A03-4B41-B0CF-74D763E82BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C433127-2A03-4B41-B0CF-74D763E82BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C433127-2A03-4B41-B0CF-74D763E82BAB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3C433127-2A03-4B41-B0CF-74D763E82BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C433127-2A03-4B41-B0CF-74D763E82BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C433127-2A03-4B41-B0CF-74D763E82BAB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08C2B271-6553-4C75-BC63-58423D71B3B1}
+	EndGlobalSection
+EndGlobal

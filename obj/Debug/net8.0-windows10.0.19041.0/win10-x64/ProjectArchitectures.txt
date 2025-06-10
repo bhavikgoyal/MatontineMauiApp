@@ -1,0 +1,1 @@
+D:\Demo MAUI Project\MatontineDigitalApp\MatontineDigitalApp\MatontineDigitalApp.csproj;x64

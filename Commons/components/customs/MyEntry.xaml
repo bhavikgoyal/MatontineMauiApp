@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatontineDigitalApp.Commons.components.customs.MyEntry"
+                 xmlns:local="clr-namespace:MatontineDigitalApp"
+              xmlns:c="clr-namespace:MatontineDigitalApp.Commons"  
+              xmlns:cm="clr-namespace:MatontineDigitalApp.Commons.components.customs"
+              xmlns:communityview="clr-namespace:MatontineDigitalApp.community.view.Management"
+              xmlns:xct="http://schemas.microsoft.com/dotnet/2021/maui"
+             >
+
+
+  <ContentView.Content>
+    <StackLayout x:Name="stackLayout" Padding="0,15,0,0" HorizontalOptions="FillAndExpand" >
+      <Grid x:Name="grid" ColumnDefinitions="*" HeightRequest="40"  HorizontalOptions="FillAndExpand" >
+        <Frame x:Name="frame"
+                     BackgroundColor="Transparent"
+                     CornerRadius="50" 
+                     HasShadow="False"
+                     BorderColor="Gray"
+                     Padding="5,0,5,0"
+                     Margin="0,0,0,0"
+                     HorizontalOptions="FillAndExpand"
+                         >
+        </Frame>
+
+        <Label x:Name="title"
+                     Margin="15, 0, 0, 0"
+                     BackgroundColor="White"
+                     TextColor="Gray"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Start"
+                     Padding="4, 0"
+                      TranslationY="-20"
+                     />
+
+        <Entry x:Name="text"
+                     Margin="15, 0, 0, 0"
+                     ReturnType="Next"
+                     HorizontalOptions="FillAndExpand"   />
+
+        <Button x:Name="btnText" 
+                      CornerRadius="50" 
+                      TextTransform="None"
+                      Padding="0,0,0,0"
+                      IsVisible="false"
+                      xct:TouchEffect.NativeAnimation="True"
+                      BackgroundColor="Transparent" />
+
+      </Grid>
+      <Label x:Name="message"
+                 Margin="15, -5, 0, 0" 
+                 Text="Veuillez saisir le champs" 
+                 IsVisible="False"
+                 TextColor="Gray"
+                 FontSize="Micro" />
+    </StackLayout>
+  </ContentView.Content>
+
+
+</ContentView>

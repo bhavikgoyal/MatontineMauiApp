@@ -1,0 +1,252 @@
+is_global = true
+build_property.RefitInternalNamespace = MatontineDigitalApp
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MatontineDigitalApp
+build_property.ProjectDir = C:\Project\MatontineMauiApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Project/MatontineMauiApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Project/MatontineMauiApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Project/MatontineMauiApp/Commons/components/customs/MyEntry.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Commons.components.customs.MyEntry.xaml
+build_metadata.AdditionalFiles.TargetPath = Commons\components\customs\MyEntry.xaml
+build_metadata.AdditionalFiles.RelativePath = Commons\components\customs\MyEntry.xaml
+
+[C:/Project/MatontineMauiApp/Commons/components/customs/MyHorizontalButtons.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Commons.components.customs.MyHorizontalButtons.xaml
+build_metadata.AdditionalFiles.TargetPath = Commons\components\customs\MyHorizontalButtons.xaml
+build_metadata.AdditionalFiles.RelativePath = Commons\components\customs\MyHorizontalButtons.xaml
+
+[C:/Project/MatontineMauiApp/Commons/components/customs/MySimpleSwitchView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Commons.components.customs.MySimpleSwitchView.xaml
+build_metadata.AdditionalFiles.TargetPath = Commons\components\customs\MySimpleSwitchView.xaml
+build_metadata.AdditionalFiles.RelativePath = Commons\components\customs\MySimpleSwitchView.xaml
+
+[C:/Project/MatontineMauiApp/Commons/MyContentPageWithTemplate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Commons.MyContentPageWithTemplate.xaml
+build_metadata.AdditionalFiles.TargetPath = Commons\MyContentPageWithTemplate.xaml
+build_metadata.AdditionalFiles.RelativePath = Commons\MyContentPageWithTemplate.xaml
+
+[C:/Project/MatontineMauiApp/Commons/templates/MyDefaultTemplate.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Commons.templates.MyDefaultTemplate.xaml
+build_metadata.AdditionalFiles.TargetPath = Commons\templates\MyDefaultTemplate.xaml
+build_metadata.AdditionalFiles.RelativePath = Commons\templates\MyDefaultTemplate.xaml
+
+[C:/Project/MatontineMauiApp/community/view/Management/ListCommunityView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.community.view.Management.ListCommunityView.xaml
+build_metadata.AdditionalFiles.TargetPath = community\view\Management\ListCommunityView.xaml
+build_metadata.AdditionalFiles.RelativePath = community\view\Management\ListCommunityView.xaml
+
+[C:/Project/MatontineMauiApp/home/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.home.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = home\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = home\HomePage.xaml
+
+[C:/Project/MatontineMauiApp/home/HomePageMenuItemView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.home.HomePageMenuItemView.xaml
+build_metadata.AdditionalFiles.TargetPath = home\HomePageMenuItemView.xaml
+build_metadata.AdditionalFiles.RelativePath = home\HomePageMenuItemView.xaml
+
+[C:/Project/MatontineMauiApp/home/HomeTabbedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.home.HomeTabbedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = home\HomeTabbedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = home\HomeTabbedPage.xaml
+
+[C:/Project/MatontineMauiApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/About/GetPricingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.About.GetPricingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\About\GetPricingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\About\GetPricingPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/Authentification/AuthentificationHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.Authentification.AuthentificationHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Authentification\AuthentificationHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Authentification\AuthentificationHomePage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/Authentification/AuthentificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.Authentification.AuthentificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Authentification\AuthentificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Authentification\AuthentificationPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/CommunityNamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.CommunityNamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\CommunityNamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\CommunityNamePage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/ContributionAmountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.ContributionAmountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\ContributionAmountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\ContributionAmountPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/CountryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.CountryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\CountryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\CountryPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/DayOfTheDrawPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.DayOfTheDrawPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\DayOfTheDrawPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\DayOfTheDrawPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/GenderPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.GenderPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\GenderPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\GenderPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/GetStart.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.GetStart.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\GetStart.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\GetStart.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/ManagerLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.ManagerLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\ManagerLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\ManagerLogin.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/ManagerPersonalDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.ManagerPersonalDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\ManagerPersonalDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\ManagerPersonalDetailsPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/NumberOfWinnersPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.NumberOfWinnersPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\NumberOfWinnersPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\NumberOfWinnersPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/OtpCheckPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.OtpCheckPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\OtpCheckPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\OtpCheckPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/PeriodecityTypePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.PeriodecityTypePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\PeriodecityTypePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\PeriodecityTypePage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/PeriodicityPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.PeriodicityPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\PeriodicityPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\PeriodicityPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/PersonaIdentitePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.PersonaIdentitePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\PersonaIdentitePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\PersonaIdentitePage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/RegionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.RegionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\RegionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\RegionPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/SelectPartenerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.SelectPartenerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\SelectPartenerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\SelectPartenerPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/SuccessCommunityCreationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.SuccessCommunityCreationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\SuccessCommunityCreationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\SuccessCommunityCreationPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/VerifyCommunityDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.VerifyCommunityDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\VerifyCommunityDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\VerifyCommunityDetails.xaml
+
+[C:/Project/MatontineMauiApp/Pages/GetStarted/VerifyMangerDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.GetStarted.VerifyMangerDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\GetStarted\VerifyMangerDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\GetStarted\VerifyMangerDetailsPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/Members/ListMemberPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.Members.ListMemberPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Members\ListMemberPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Members\ListMemberPage.xaml
+
+[C:/Project/MatontineMauiApp/Pages/Signin/LoginHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.Signin.LoginHome.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Signin\LoginHome.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Signin\LoginHome.xaml
+
+[C:/Project/MatontineMauiApp/Pages/View/ViewLayout.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Pages.View.ViewLayout.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\View\ViewLayout.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\View\ViewLayout.xaml
+
+[C:/Project/MatontineMauiApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Project/MatontineMauiApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MatontineDigitalApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

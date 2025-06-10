@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="MatontineDigitalApp.Pages.GetStarted.ManagerLogin"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  Title="ManagerLogin"
+  ControlTemplate="{StaticResource MainPageTemplate}">
+  <ContentPage.Content>
+    <VerticalStackLayout
+      Padding="10"
+      BackgroundColor="Transparent"
+      Spacing="15">
+      <ScrollView
+        x:Name="contentScrollView"
+        Grid.Row="2"
+        Grid.Column="1"
+        Grid.ColumnSpan="2">
+        <StackLayout
+          Margin="-6,0,0,0"
+          Padding="20,10,20,20"
+          BackgroundColor="White">
+          <StackLayout
+            x:Name="titleSTL"
+            Orientation="Horizontal"
+            Spacing="0">
+            <Image
+              HeightRequest="40"
+              Source="rightaroow.png"
+              WidthRequest="40" />
+            <Label
+              x:Name="titleLBL"
+              Margin="0,5,0,0"
+              FontAttributes="Bold"
+              FontSize="Medium"
+              Text="Login Details"
+              TextColor="#27ae60" />
+          </StackLayout>
+          <StackLayout
+            Padding="0"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal">
+            <Label
+              FontSize="Medium"
+              HorizontalOptions="FillAndExpand"
+              LineBreakMode="WordWrap">
+              <Label.FormattedText>
+                <FormattedString>
+                  <Span FontAttributes="Bold" Text="Please select your login " />
+                  <Span FontAttributes="Bold" Text="details" />
+                </FormattedString>
+              </Label.FormattedText>
+            </Label>
+          </StackLayout>
+          <StackLayout
+            Margin="0,10,0,0"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal"
+            Spacing="10">
+            <VerticalStackLayout
+              Padding="0"
+              BackgroundColor="White"
+              HorizontalOptions="FillAndExpand"
+              Spacing="0">
+              <Grid>
+                <!--  Frame with rounded border  -->
+                <Border
+                  Padding="15"
+                  BackgroundColor="White"
+                  HeightRequest="40"
+                  HorizontalOptions="FillAndExpand"
+                  Stroke="#9c9c9c"
+                  StrokeShape="RoundRectangle 30"
+                  StrokeThickness="1.5" />
+                <Label
+                  Margin="20,-8,0,0"
+                  Padding="5,0"
+                  BackgroundColor="White"
+                  FontSize="14"
+                  HorizontalOptions="Start"
+                  Text="Login"
+                  TextColor="Gray"
+                  VerticalOptions="Start" />
+                <Entry
+                  x:Name="loginEntry"
+                  Margin="20,0,20,0"
+                  BackgroundColor="Transparent"
+                  FontSize="16"
+                  HorizontalOptions="FillAndExpand"
+                  Placeholder=""
+                  ReturnType="Next"
+                  TextColor="Gray"
+                  VerticalOptions="Center" />
+              </Grid>
+
+              <Grid Margin="0,20,0,0">
+                <!--  Frame with rounded border  -->
+                <Border
+                  Padding="15"
+                  BackgroundColor="White"
+                  HeightRequest="40"
+                  HorizontalOptions="FillAndExpand"
+                  Stroke="#9c9c9c"
+                  StrokeShape="RoundRectangle 30"
+                  StrokeThickness="1.5" />
+                <Label
+                  Margin="20,-8,0,0"
+                  Padding="5,0"
+                  BackgroundColor="White"
+                  FontSize="14"
+                  HorizontalOptions="Start"
+                  Text="+221 Mobile Number"
+                  TextColor="Gray"
+                  VerticalOptions="Start" />
+                <Entry
+                  x:Name="mobileEntry"
+                  Margin="20,0,20,0"
+                  BackgroundColor="Transparent"
+                  FontSize="16"
+                  HorizontalOptions="FillAndExpand"
+                  Placeholder=""
+                  ReturnType="Next"
+                  TextColor="Gray"
+                  VerticalOptions="Center" />
+              </Grid>
+
+              <Grid Margin="0,20,0,0">
+                <Border
+                  Padding="15"
+                  BackgroundColor="White"
+                  HeightRequest="40"
+                  HorizontalOptions="FillAndExpand"
+                  Stroke="#9c9c9c"
+                  StrokeShape="RoundRectangle 30"
+                  StrokeThickness="1.5" />
+                <Label
+                  Margin="20,-8,0,0"
+                  Padding="5,0"
+                  BackgroundColor="White"
+                  FontSize="14"
+                  HorizontalOptions="Start"
+                  Text="Password:"
+                  TextColor="Gray"
+                  VerticalOptions="Start" />
+                <Entry
+                  x:Name="passwordEntry"
+                  Margin="20,0,20,0"
+                  BackgroundColor="Transparent"
+                  FontSize="16"
+                  HorizontalOptions="FillAndExpand"
+                  IsPassword="true"
+                  ReturnType="Done"
+                  TextColor="Gray"
+                  VerticalOptions="Center" />
+              </Grid>
+
+              <Grid Margin="0,20,0,0">
+                <Border
+                  Padding="15"
+                  BackgroundColor="White"
+                  HeightRequest="40"
+                  HorizontalOptions="FillAndExpand"
+                  Stroke="#9c9c9c"
+                  StrokeShape="RoundRectangle 30"
+                  StrokeThickness="1.5" />
+                <Label
+                  Margin="20,-8,0,0"
+                  Padding="5,0"
+                  BackgroundColor="White"
+                  FontSize="14"
+                  HorizontalOptions="Start"
+                  Text="Retype password"
+                  TextColor="Gray"
+                  VerticalOptions="Start" />
+                <Entry
+                  x:Name="RetypepasswordEntry"
+                  Margin="20,0,20,0"
+                  BackgroundColor="Transparent"
+                  FontSize="16"
+                  HorizontalOptions="FillAndExpand"
+                  IsPassword="true"
+                  ReturnType="Done"
+                  TextColor="Gray"
+                  VerticalOptions="Center" />
+              </Grid>
+            </VerticalStackLayout>
+
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </VerticalStackLayout>
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:MyContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="MatontineDigitalApp.Commons.MyContentPageWithTemplate"
+                 xmlns:template="clr-namespace:MatontineDigitalApp.Commons.templates"
+                 xmlns:c="clr-namespace:MatontineDigitalApp.Commons">
+
+
+  <template:MyDefaultTemplate x:Name="template" >
+    <template:MyDefaultTemplate.Body>
+      <ContentView x:Name="TemplateBodyContent" />
+    </template:MyDefaultTemplate.Body>
+  </template:MyDefaultTemplate>
+
+</c:MyContentPage>

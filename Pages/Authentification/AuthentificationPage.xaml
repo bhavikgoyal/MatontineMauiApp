@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="MatontineDigitalApp.Pages.Authentification.AuthentificationPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  Title="AuthentificationPage"
+  ControlTemplate="{StaticResource MainPageTemplate}"
+  Shell.NavBarIsVisible="False">
+  <Grid>
+    <VerticalStackLayout
+      Padding="10"
+      BackgroundColor="Transparent"
+      Spacing="15">
+
+      <ScrollView
+        x:Name="contentScrollView"
+        Grid.Row="2"
+        Grid.Column="1"
+        Grid.ColumnSpan="2">
+        <StackLayout
+          Margin="-6,0,0,0"
+          Padding="20,10,20,20"
+          BackgroundColor="White">
+          <StackLayout
+            x:Name="titleSTL"
+            Orientation="Horizontal"
+            Spacing="0">
+            <Image
+              HeightRequest="40"
+              Source="rightaroow.png"
+              WidthRequest="40" />
+            <Label
+              x:Name="titleLBL"
+              Margin="0,7,0,0"
+              FontAttributes="Bold"
+              FontSize="Medium"
+              Text="Log into your Account"
+              TextColor="#27ae60" />
+          </StackLayout>
+          <StackLayout
+            Margin="0,10,0,0"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal"
+            Spacing="10">
+            <VerticalStackLayout
+              Padding="0"
+              BackgroundColor="White"
+              HorizontalOptions="FillAndExpand"
+              Spacing="0">
+              <!--  Wrapper layout for overlapping  -->
+              <Grid>
+                <!--  Frame with rounded border  -->
+                <Border
+                  Padding="15"
+                  BackgroundColor="White"
+                  HeightRequest="40"
+                  HorizontalOptions="FillAndExpand"
+                  Stroke="#9c9c9c"
+                  StrokeShape="RoundRectangle 30"
+                  StrokeThickness="1.5" />
+                <!--  Overlapping Label  -->
+                <Label
+                  Margin="20,-8,0,0"
+                  Padding="5,0"
+                  BackgroundColor="White"
+                  FontSize="14"
+                  HorizontalOptions="Start"
+                  Text="Login"
+                  TextColor="Gray"
+                  VerticalOptions="Start" />
+                <!--  Entry inside the frame  -->
+                <Entry
+                  x:Name="loginEntry"
+                  Margin="20,0,20,0"
+                  BackgroundColor="Transparent"
+                  FontSize="16"
+                  HorizontalOptions="FillAndExpand"
+                  Placeholder=""
+                  ReturnType="Next"
+                  TextColor="Gray"
+                  VerticalOptions="Center" />
+              </Grid>
+              <Grid Margin="0,20,0,0">
+                <!--  Frame with rounded border  -->
+                <Border
+                  Padding="15"
+                  BackgroundColor="White"
+                  HeightRequest="40"
+                  HorizontalOptions="FillAndExpand"
+                  Stroke="#9c9c9c"
+                  StrokeShape="RoundRectangle 30"
+                  StrokeThickness="1.5" />
+                <!--  Overlapping Label  -->
+                <Label
+                  Margin="20,-8,0,0"
+                  Padding="5,0"
+                  BackgroundColor="White"
+                  FontSize="14"
+                  HorizontalOptions="Start"
+                  Text="Password:"
+                  TextColor="Gray"
+                  VerticalOptions="Start" />
+                <!--  Entry inside the frame  -->
+                <Entry
+                  x:Name="passwordEntry"
+                  Margin="20,0,20,0"
+                  BackgroundColor="Transparent"
+                  FontSize="16"
+                  HorizontalOptions="FillAndExpand"
+                  IsPassword="true"
+                  ReturnType="Done"
+                  TextColor="Gray"
+                  VerticalOptions="Center" />
+              </Grid>
+              <HorizontalStackLayout
+                Margin="0,10,0,0"
+                Spacing="0"
+                VerticalOptions="Center">
+                <CheckBox x:Name="rememberMeCheckBox" Color="#27ae60" />
+                <Label
+                  x:Name="rememberMeLBL"
+                  Margin="0,10"
+                  Text=""
+                  TextColor="Gray">
+                  <Label.Triggers>
+                    <DataTrigger
+                      Binding="{Binding Source={x:Reference rememberMeCheckBox}, Path=IsChecked}"
+                      TargetType="Label"
+                      Value="true">
+                      <Setter Property="FontAttributes" Value="Bold" />
+                    </DataTrigger>
+                  </Label.Triggers>
+                </Label>
+              </HorizontalStackLayout>
+
+              <StackLayout
+                x:Name="useFingerPrintSL"
+                IsVisible="false"
+                Orientation="Horizontal">
+                <CheckBox x:Name="useFingerPrintCheckBox" Color="#27ae60" />
+                <Label
+                  x:Name="useFingerPrintLBL"
+                  Margin="0,10"
+                  Text=""
+                  TextColor="Gray">
+                  <Label.Triggers>
+                    <DataTrigger
+                      Binding="{Binding Source={x:Reference useFingerPrintCheckBox}, Path=IsChecked}"
+                      TargetType="Label"
+                      Value="true">
+                      <Setter Property="FontAttributes" Value="Bold" />
+                    </DataTrigger>
+                  </Label.Triggers>
+                </Label>
+              </StackLayout>
+
+              <StackLayout
+                Margin="15,10,0,0"
+                Spacing="10"
+                VerticalOptions="Center">
+                <Label
+                  FontAttributes="Bold"
+                  FontSize="14"
+                  Text="Forgot password?"
+                  TextColor="Gray" />
+              </StackLayout>
+
+              <Label Margin="15,10,0,0">
+                <Label.FormattedText>
+                  <FormattedString>
+                    <Span Text="Don't have any account? " TextColor="Gray" />
+                    <Span
+                      FontAttributes="Bold"
+                      Text="Create One !"
+                      TextColor="Gray" />
+                  </FormattedString>
+                </Label.FormattedText>
+              </Label>
+            </VerticalStackLayout>
+
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </VerticalStackLayout>
+    <Grid
+      x:Name="aiLayout"
+      AbsoluteLayout.LayoutBounds="0,0,1,1"
+      AbsoluteLayout.LayoutFlags="All"
+      BackgroundColor="#50000000"
+      VerticalOptions="FillAndExpand">
+      <StackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+        <ActivityIndicator
+          x:Name="ai"
+          IsRunning="True"
+          Color="#0033aa" />
+        <Label
+          x:Name="lblLoading"
+          Grid.Row="2"
+          FontAttributes="Bold"
+          FontFamily="PlayfairDisplayRegular"
+          HorizontalTextAlignment="Center"
+          Text=""
+          TextColor="#0033aa" />
+      </StackLayout>
+    </Grid>
+  </Grid>
+</ContentPage>

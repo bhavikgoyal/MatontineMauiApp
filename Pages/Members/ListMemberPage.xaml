@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MatontineDigitalApp.Pages.Members.ListMemberPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="myPage"
+    Title="ListMemberPage">
+    <StackLayout
+        HorizontalOptions="StartAndExpand"
+        Orientation="Vertical"
+        VerticalOptions="Fill">
+
+        <ListView
+            x:Name="listView"
+            HasUnevenRows="True"
+            ItemsSource="{Binding MyItems}"
+            SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10,10,5" BackgroundColor="White">
+                            <Frame
+                                Padding="0"
+                                BorderColor="{StaticResource primaryColor}"
+                                CornerRadius="50"
+                                HasShadow="False">
+
+                                <Grid
+                                    Padding="0,3,3,0"
+                                    ColumnDefinitions="Auto, Auto, 4*, Auto"
+                                    ColumnSpacing="0"
+                                    HorizontalOptions="FillAndExpand"
+                                    VerticalOptions="Center">
+
+                                    <!--  Checkbox  -->
+                                    <CheckBox
+                                        Grid.Column="0"
+                                        Margin="5,0,0,0"
+                                        HorizontalOptions="Start"
+                                        IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                                        IsEnabled="{Binding CanSelect}"
+                                        IsVisible="{Binding IsAutopayEnabled}"
+                                        VerticalOptions="Center"
+                                        Color="{StaticResource primaryColor}">
+                                        <CheckBox.Triggers>
+                                            <DataTrigger
+                                                Binding="{Binding CanSelect}"
+                                                TargetType="CheckBox"
+                                                Value="False">
+                                                <Setter Property="Color" Value="Gray" />
+                                            </DataTrigger>
+                                        </CheckBox.Triggers>
+                                    </CheckBox>
+
+                                    <!--  Profile Photo  -->
+                                    <StackLayout Grid.Column="1" HorizontalOptions="Start">
+                                        <Frame
+                                            Margin="0"
+                                            Padding="1"
+                                            BackgroundColor="{StaticResource secondaryColor}"
+                                            CornerRadius="35"
+                                            HasShadow="False"
+                                            HeightRequest="35"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="CenterAndExpand"
+                                            WidthRequest="35">
+                                            <Frame.Triggers>
+                                                <DataTrigger
+                                                    Binding="{Binding IsAutopayEnabled}"
+                                                    TargetType="Frame"
+                                                    Value="False">
+                                                    <Setter Property="Margin" Value="10,0,0,0" />
+                                                </DataTrigger>
+                                                <DataTrigger
+                                                    Binding="{Binding IsAutopayEnabled}"
+                                                    TargetType="Frame"
+                                                    Value="True">
+                                                    <Setter Property="Margin" Value="0" />
+                                                </DataTrigger>
+                                            </Frame.Triggers>
+                                            <Frame
+                                                Padding="0"
+                                                CornerRadius="35"
+                                                HeightRequest="35"
+                                                WidthRequest="35">
+                                                <Image
+                                                    x:Name="img"
+                                                    Margin="0"
+                                                    Source="{Binding GenrePhoto}"
+                                                    VerticalOptions="CenterAndExpand" />
+                                            </Frame>
+                                        </Frame>
+                                    </StackLayout>
+
+                                    <!--  Member Info  -->
+                                    <StackLayout
+                                        Grid.Column="2"
+                                        Margin="0"
+                                        Padding="5,5"
+                                        HorizontalOptions="Start"
+                                        Spacing="0">
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span FontAttributes="Bold" Text="{Binding DisplayName}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label>
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <!--<Span Text="{x:Static local:Translate.telephonecourt}" />-->
+                                                    <Span Text=" : " />
+                                                    <Span Text="{Binding DisplayTelephone}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+
+                                    <!--  Delete Button  -->
+                                    <StackLayout
+                                        Grid.Column="3"
+                                        IsVisible="{Binding Path=BindingContext.DeleteBtnIsVisible, Source={x:Reference myPage}}"
+                                        WidthRequest="40">
+                                        <Label
+                                            HorizontalOptions="CenterAndExpand"
+                                            TextColor="White"
+                                            VerticalOptions="CenterAndExpand">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span
+                                                        FontFamily="Material"
+                                                        FontSize="Large"
+                                                        Text="&#xe872;"
+                                                        TextColor="{StaticResource secondaryColor}" />
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!--  Submit Button  -->
+        <Button
+            x:Name="IsAutopayEnabledButton"
+            Margin="15,10,15,0"
+            BackgroundColor="#27ae60"
+            Command="{Binding MyPaymentCommand}"
+            CornerRadius="50"
+            FontAttributes="Bold"
+            FontSize="15"
+            HeightRequest="40"
+            HorizontalOptions="FillAndExpand"
+            Text="{Binding Updatelbl}"
+            TextColor="White"
+            VerticalOptions="End" />
+    </StackLayout>
+</ContentPage>

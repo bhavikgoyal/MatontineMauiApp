@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="MatontineDigitalApp.Pages.GetStarted.SelectPartenerPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  Title="SelectPartenerPage"
+  ControlTemplate="{StaticResource MainPageTemplate}">
+  <ContentPage.Content>
+    <VerticalStackLayout
+      Padding="10"
+      BackgroundColor="Transparent"
+      Spacing="15">
+      <ScrollView
+        x:Name="contentScrollView"
+        Grid.Row="2"
+        Grid.Column="1"
+        Grid.ColumnSpan="2">
+        <StackLayout
+          Margin="-6,0,0,0"
+          Padding="20,10,20,20"
+          BackgroundColor="White">
+          <StackLayout
+            x:Name="titleSTL"
+            Orientation="Horizontal"
+            Spacing="0">
+            <Image
+              HeightRequest="40"
+              Source="rightaroow.png"
+              WidthRequest="40" />
+            <Label
+              x:Name="titleLBL"
+              Margin="0,5,0,0"
+              FontAttributes="Bold"
+              FontSize="Medium"
+              Text="Country"
+              TextColor="#27ae60" />
+          </StackLayout>
+          <StackLayout
+            Padding="0"
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal">
+            <Label
+              FontSize="Medium"
+              HorizontalOptions="FillAndExpand"
+              LineBreakMode="WordWrap">
+              <Label.FormattedText>
+                <FormattedString>
+                  <Span FontAttributes="Bold" Text="Please select your country" />
+                </FormattedString>
+              </Label.FormattedText>
+            </Label>
+          </StackLayout>
+          <StackLayout
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"
+            Orientation="Horizontal"
+            Spacing="10">
+            <Border
+              x:Name="borderOption1"
+              Padding="3"
+              BackgroundColor="Transparent"
+              HeightRequest="100"
+              Stroke="Transparent"
+              StrokeThickness="7"
+              WidthRequest="100">
+              <Border.StrokeShape>
+                <RoundRectangle CornerRadius="55" />
+              </Border.StrokeShape>
+              <Image
+                x:Name="french"
+                HeightRequest="100"
+                Source="sn.png"
+                WidthRequest="100">
+                <Image.GestureRecognizers>
+                  <!--<TapGestureRecognizer Tapped="OnImage1Tapped" />-->
+                </Image.GestureRecognizers>
+              </Image>
+            </Border>
+            <Border
+              x:Name="borderOption2"
+              Padding="3"
+              BackgroundColor="Transparent"
+              HeightRequest="100"
+              Stroke="Transparent"
+              StrokeThickness="7"
+              WidthRequest="100">
+              <Border.StrokeShape>
+                <RoundRectangle CornerRadius="55" />
+              </Border.StrokeShape>
+              <Image
+                x:Name="english"
+                HeightRequest="100"
+                Source="gmd.png"
+                WidthRequest="100">
+                <Image.GestureRecognizers>
+                  <!--<TapGestureRecognizer Tapped="OnImage2Tapped" />-->
+                </Image.GestureRecognizers>
+              </Image>
+            </Border>
+          </StackLayout>
+        </StackLayout>
+      </ScrollView>
+    </VerticalStackLayout>
+  </ContentPage.Content>
+</ContentPage>

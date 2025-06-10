@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatontineDigitalApp.Commons.components.customs.MyHorizontalButtons"
+             xmlns:local="clr-namespace:MatontineDigitalApp"
+             xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+             xmlns:xct="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:cm="clr-namespace:MatontineDigitalApp.Commons.components.customs"
+             xmlns:communityview="clr-namespace:MatontineDigitalApp.community.view.Management"
+             >
+
+  <ContentView.Content>
+    <ScrollView Orientation="Horizontal" x:Name="parentLayout">
+      <StackLayout>
+        <StackLayout BackgroundColor="White" Padding="0">
+          <Frame BorderColor="Gray"     
+                                  HasShadow="False"
+                                  CornerRadius="50"
+                             HeightRequest="50"
+                                  Padding="0">
+
+            <Grid ColumnDefinitions="*,*, *" ColumnSpacing="0" x:Name="btnGRID">
+              <StackLayout x:Name="btnLeftLayout"
+                                  Grid.Column="0" Spacing="0" Padding="5"
+                                           BackgroundColor="{x:Static c:CommonsResources.primaryColor}"
+                                 xct:TouchEffect.NativeAnimation="True"
+                                           xct:TouchEffect.Command="{Binding MyLeftBtnCommand}">
+                <Label x:Name="leftLBL" Text="Left btn"
+                                         TextColor="White" FontAttributes="Bold"
+                                         VerticalOptions="CenterAndExpand"
+                                         HorizontalOptions="Center">
+                </Label>
+              </StackLayout>
+
+
+              <Frame x:Name="btnCenterLayout"
+                                     Grid.Column="1" BorderColor="Gray"
+                                     CornerRadius="0" Padding="5" 
+                                     xct:TouchEffect.NativeAnimation="True"
+                                           xct:TouchEffect.Command="{Binding MyCenterBtnCommand}">
+                <Label x:Name="centerLBL" Text="Center btn"
+                                         TextColor="Gray" FontAttributes="None"
+                                         VerticalOptions="CenterAndExpand"
+                                         HorizontalOptions="Center">
+                </Label>
+              </Frame>
+
+              <StackLayout x:Name="btnRigthLayout"
+                                  Grid.Column="2"  Padding="5"
+                                          xct:TouchEffect.NativeAnimation="True"
+                                           xct:TouchEffect.Command="{Binding MyRigthBtnCommand}" >
+                <Label x:Name="rigthLBL" Text="Rigth btn"
+                                         TextColor="Gray" FontAttributes="None"
+                                         VerticalOptions="CenterAndExpand"
+                                         HorizontalOptions="Center">
+                </Label>
+              </StackLayout>
+            </Grid>
+          </Frame>
+        </StackLayout>
+      </StackLayout>
+    </ScrollView>
+  </ContentView.Content>
+</ContentView>

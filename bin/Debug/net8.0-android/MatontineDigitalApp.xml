@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MatontineDigitalApp</name>
+    </assembly>
+    <members>
+        <member name="M:MatontineDigitalApp.Commons.CommonsResources.GetTestRegions">
+            <summary>
+            Regions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MatontineDigitalApp.Model.ListDataDto.lstpays">
+            
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_DatePicker.TextColorTo(Microsoft.Maui.Controls.DatePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Editor.TextColorTo(Microsoft.Maui.Controls.Editor,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Entry.TextColorTo(Microsoft.Maui.Controls.Entry,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_InputView.TextColorTo(Microsoft.Maui.Controls.InputView,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Label.TextColorTo(Microsoft.Maui.Controls.Label,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Picker.TextColorTo(Microsoft.Maui.Controls.Picker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_RadioButton.TextColorTo(Microsoft.Maui.Controls.RadioButton,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_SearchBar.TextColorTo(Microsoft.Maui.Controls.SearchBar,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_TimePicker.TextColorTo(Microsoft.Maui.Controls.TimePicker,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
+            <summary>
+            Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
+            </summary>
+            <param name = "element"></param>
+            <param name = "color">The target color to animate the <see cref = "P:Microsoft.Maui.ITextStyle.TextColor"/> to</param>
+            <param name = "rate">The time, in milliseconds, between the frames of the animation</param>
+            <param name = "length">The duration, in milliseconds, of the animation</param>
+            <param name = "easing">The easing function to be used in the animation</param>
+            <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
+            <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:Refit.Implementation.Generated">
+            <inheritdoc />
+        </member>
+        <member name="T:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI">
+            <inheritdoc />
+        </member>
+        <member name="P:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.Client">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.#ctor(System.Net.Http.HttpClient,Refit.IRequestBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetListData(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetPartners">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetRegionsData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.ValidationLoginAndTelephone(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.Login(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetSMSCode(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.InitPasswordFromSMSCode(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveProfile(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.UpdateProfile(MatontineDigitalApp.Model.UserProfile)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MaTontineDeleteProfile(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetLisyPayment(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.UpdatePayment(MatontineDigitalApp.Model.UpdatePaymentRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveMember(MatontineDigitalApp.Model.MemberDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveMDEPOT(MatontineDigitalApp.Model.MdepotDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetMembers(MatontineDigitalApp.Model.GetListMembersRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveServiceActif(MatontineDigitalApp.Services.ServiceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.UpdateService(MatontineDigitalApp.Model.UpdateServiceRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetServicesActif(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveActivationService(MatontineDigitalApp.Services.ServiceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetActivationServices(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveAssignation(MatontineDigitalApp.Model.AssignationServiceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveAssignation(MatontineDigitalApp.Model.SaveAssignationRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetAssignations(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetDashboards(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetReports(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetCommunity(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveCommunityData(MatontineDigitalApp.Model.CommunityDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MaTontineValidationCommunityName(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SaveInscription(MatontineDigitalApp.Model.CommunityDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.GetTranslateData(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.SendEmail(MatontineDigitalApp.Model.ContacteDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetListData(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetPartners">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetRegionsData(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#ValidationLoginAndTelephone(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#Login(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetSMSCode(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#InitPasswordFromSMSCode(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveProfile(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#UpdateProfile(MatontineDigitalApp.Model.UserProfile)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#MaTontineDeleteProfile(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetLisyPayment(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#UpdatePayment(MatontineDigitalApp.Model.UpdatePaymentRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveMember(MatontineDigitalApp.Model.MemberDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveMDEPOT(MatontineDigitalApp.Model.MdepotDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetMembers(MatontineDigitalApp.Model.GetListMembersRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveServiceActif(MatontineDigitalApp.Services.ServiceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#UpdateService(MatontineDigitalApp.Model.UpdateServiceRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetServicesActif(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveActivationService(MatontineDigitalApp.Services.ServiceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetActivationServices(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveAssignation(MatontineDigitalApp.Model.AssignationServiceDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveAssignation(MatontineDigitalApp.Model.SaveAssignationRequest)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetAssignations(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetDashboards(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetReports(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetCommunity(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveCommunityData(MatontineDigitalApp.Model.CommunityDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#MaTontineValidationCommunityName(System.String,System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SaveInscription(MatontineDigitalApp.Model.CommunityDto)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#GetTranslateData(MatontineDigitalApp.Model.Credentials)">
+            <inheritdoc />
+        </member>
+        <member name="M:Refit.Implementation.Generated.MatontineDigitalAppServicesIMaTontineAPI.MatontineDigitalApp#Services#IMaTontineAPI#SendEmail(MatontineDigitalApp.Model.ContacteDto)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

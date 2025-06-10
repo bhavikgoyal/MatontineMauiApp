@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+  x:Class="MatontineDigitalApp.Pages.GetStarted.OtpCheckPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  Title="OtpCheckPage"
+  ControlTemplate="{StaticResource MainPageTemplate}">
+
+  <Grid Padding="30,20">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+
+    <!--  ColumnDefinitions को यहाँ से हटा दिया गया है  -->
+
+    <Grid Grid.Row="0">
+      <Label
+        FontAttributes="Bold"
+        FontSize="Large"
+        HorizontalTextAlignment="Center"
+        Text="Please submit the SIC digit confirmation code sent to +221 777894523" />
+    </Grid>
+    <Grid Grid.Row="1">
+      <Grid>
+        <!--  Frame with rounded border  -->
+        <Border
+          Padding="15"
+          BackgroundColor="White"
+          HeightRequest="40"
+          HorizontalOptions="FillAndExpand"
+          Stroke="#9c9c9c"
+          StrokeShape="RoundRectangle 30"
+          StrokeThickness="1.5" />
+        <Label
+          Margin="20,-8,0,0"
+          Padding="5,0"
+          BackgroundColor="White"
+          FontSize="14"
+          HorizontalOptions="Start"
+          Text="Six digit Code"
+          TextColor="Gray"
+          VerticalOptions="Start" />
+        <Entry
+          x:Name="mobileEntry"
+          Margin="20,0,20,0"
+          BackgroundColor="Transparent"
+          FontSize="16"
+          HorizontalOptions="FillAndExpand"
+          Placeholder=""
+          ReturnType="Next"
+          TextColor="Gray"
+          VerticalOptions="Center" />
+      </Grid>
+    </Grid>
+    <Grid Grid.Row="2">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="50" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <CheckBox Grid.Column="0" Color="#27ae60" />
+        <Label
+          x:Name="enlangauge"
+          Grid.Row="0"
+          Grid.RowSpan="2"
+          Grid.Column="1"
+          FontSize="15"
+          HorizontalTextAlignment="Start"
+          VerticalOptions="CenterAndExpand">
+          <Label.FormattedText>
+            <FormattedString>
+              <Span StyleId="data" Text="I read and accept the " />
+              <Span Text="Terms of Use " TextColor="#55aaff">
+                <!--<Span.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="termsOfUse" />
+                </Span.GestureRecognizers>-->
+              </Span>
+              <Span Text="as well as the " />
+              <Span Text="Privacy Policy " TextColor="#55aaff">
+                <!--<Span.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="privacyPolicy" />
+                </Span.GestureRecognizers>-->
+              </Span>
+              <Span Text="of MaTontine." />
+            </FormattedString>
+          </Label.FormattedText>
+        </Label>
+        <Label
+          x:Name="frlangauge"
+          Grid.Row="0"
+          Grid.RowSpan="2"
+          Grid.Column="1"
+          ClassId="dst"
+          FontSize="15"
+          HorizontalTextAlignment="Start"
+          IsVisible="false">
+          <Label.FormattedText>
+            <FormattedString>
+              <Span StyleId="data" Text="Je prends connaissance et accepte les " />
+              <Span Text="Conditions d'utilisation " TextColor="#55aaff">
+                <!--<Span.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="termsOfUse" />
+                </Span.GestureRecognizers>-->
+              </Span>
+              <Span Text="ainsi que la " />
+              <Span Text="Politique de Confidentialité " TextColor="#55aaff">
+                <!--<Span.GestureRecognizers>
+                  <TapGestureRecognizer Tapped="privacyPolicy" />
+                </Span.GestureRecognizers>-->
+              </Span>
+              <Span Text="de MaTontine." />
+            </FormattedString>
+          </Label.FormattedText>
+        </Label>
+
+      </Grid>
+    </Grid>
+  </Grid>
+</ContentPage>
