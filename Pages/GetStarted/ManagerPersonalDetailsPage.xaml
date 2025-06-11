@@ -1,12 +1,205 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MatontineDigitalApp.Pages.GetStarted.ManagerPersonalDetailsPage"
-             Title="ManagerPersonalDetailsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+  x:Class="MatontineDigitalApp.Pages.GetStarted.ManagerPersonalDetailsPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  Title="ManagerPersonalDetailsPage"
+  ControlTemplate="{StaticResource MainPageTemplate}">
+
+  <Grid Padding="20,20">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <Grid Grid.Row="0">
+      <StackLayout
+        x:Name="titleSTL"
+        Orientation="Horizontal"
+        Spacing="0">
+        <Image
+          HeightRequest="40"
+          Source="rightaroow.png"
+          WidthRequest="40" />
+        <Label
+          x:Name="titleLBL"
+          Margin="0,5,0,0"
+          FontAttributes="Bold"
+          FontSize="Large"
+          Text="Personal Details"
+          TextColor="#27ae60" />
+      </StackLayout>
+
+    </Grid>
+    <Grid Grid.Row="1">
+      <Grid>
+        <StackLayout
+          Padding="0"
+          HorizontalOptions="FillAndExpand"
+          Orientation="Horizontal">
+          <Label
+            FontSize="Medium"
+            HorizontalOptions="FillAndExpand"
+            LineBreakMode="WordWrap">
+            <Label.FormattedText>
+              <FormattedString>
+                <Span FontAttributes="Bold" Text="Enter your name and date of birth " />
+              </FormattedString>
+            </Label.FormattedText>
+          </Label>
+        </StackLayout>
+      </Grid>
+    </Grid>
+    <Grid Grid.Row="2">
+      <Grid Margin="0,20,0,0">
+
+        <Border
+          Padding="15"
+          BackgroundColor="White"
+          HeightRequest="40"
+          HorizontalOptions="FillAndExpand"
+          Stroke="#9c9c9c"
+          StrokeShape="RoundRectangle 30"
+          StrokeThickness="1.5" />
+        <Label
+          Margin="20,-8,0,0"
+          Padding="5,0"
+          BackgroundColor="White"
+          FontSize="14"
+          HorizontalOptions="Start"
+          Text="Name"
+          TextColor="Gray"
+          VerticalOptions="Start" />
+        <Entry
+          x:Name="nameEntry"
+          Margin="20,0,20,0"
+          BackgroundColor="Transparent"
+          FontSize="16"
+          HorizontalOptions="FillAndExpand"
+          Placeholder=""
+          ReturnType="Next"
+          TextColor="Gray"
+          VerticalOptions="Center" />
+      </Grid>
+    </Grid>
+    <Grid Grid.Row="3">
+      <Grid Margin="0,20,0,0">
+
+        <Border
+          Padding="15"
+          BackgroundColor="White"
+          HeightRequest="40"
+          HorizontalOptions="FillAndExpand"
+          Stroke="#9c9c9c"
+          StrokeShape="RoundRectangle 30"
+          StrokeThickness="1.5" />
+        <Label
+          Margin="20,-8,0,0"
+          Padding="5,0"
+          BackgroundColor="White"
+          FontSize="14"
+          HorizontalOptions="Start"
+          Text="Last name"
+          TextColor="Gray"
+          VerticalOptions="Start" />
+        <Entry
+          x:Name="lastnameEntry"
+          Margin="20,0,20,0"
+          BackgroundColor="Transparent"
+          FontSize="16"
+          HorizontalOptions="FillAndExpand"
+          Placeholder=""
+          ReturnType="Next"
+          TextColor="Gray"
+          VerticalOptions="Center" />
+      </Grid>
+    </Grid>
+    <Grid Grid.Row="4">
+      <Grid
+        Margin="0,20,0,0"
+        Padding="10,5"
+        BackgroundColor="#ebf0f1">
+        <Border StrokeThickness="0">
+
+          <Grid
+            Margin="0,20,0,0"
+            Padding="0,0,0,0"
+            ColumnDefinitions="2.5*,1.5*,2*"
+            ColumnSpacing="5">
+
+            <Border
+              x:Name="MonthSelectorBorder"
+              Grid.Column="0"
+              Padding="15,0"
+              BackgroundColor="#ebf0f1"
+              HeightRequest="45"
+              HorizontalOptions="FillAndExpand"
+              Stroke="#a8adae"
+              StrokeShape="RoundRectangle 25"
+              StrokeThickness="1">
+              <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="MonthSelector_Tapped" />
+              </Border.GestureRecognizers>
+              <Label
+                x:Name="MonthLabel"
+                HorizontalTextAlignment="Center"
+                Text="Month"
+                TextColor="Gray"
+                VerticalOptions="Center" />
+            </Border>
+            <Border
+              Grid.Column="1"
+              BackgroundColor="#ebf0f1"
+              HeightRequest="45"
+              Stroke="#a8adae"
+              StrokeShape="RoundRectangle 25"
+              StrokeThickness="1">
+              <Entry
+                x:Name="DayEntry"
+                BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
+                Keyboard="Numeric"
+                MaxLength="2"
+                Placeholder="Day"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            </Border>
+            <Border
+              Grid.Column="2"
+              BackgroundColor="#ebf0f1"
+              HeightRequest="45"
+              Stroke="#a8adae"
+              StrokeShape="RoundRectangle 25"
+              StrokeThickness="1">
+              <Entry
+                x:Name="YearEntry"
+                BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
+                Keyboard="Numeric"
+                MaxLength="4"
+                Placeholder="Year"
+                PlaceholderColor="Gray"
+                TextColor="Black"
+                VerticalOptions="Center" />
+            </Border>
+
+          </Grid>
+        </Border>
+        <Label
+          Margin="20,0,0,0"
+          BackgroundColor="#ebf0f1"
+          FontSize="Medium"
+          HorizontalOptions="Start"
+          Text="Birthday"
+          TextColor="Gray"
+          VerticalOptions="Start" />
+      </Grid>
+    </Grid>
+  </Grid>
+
 </ContentPage>

@@ -3,104 +3,108 @@
   x:Class="MatontineDigitalApp.Pages.GetStarted.SelectPartenerPage"
   xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:MatontineDigitalApp.Pages.GetStarted"
   xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
   Title="SelectPartenerPage"
   ControlTemplate="{StaticResource MainPageTemplate}">
-  <ContentPage.Content>
-    <VerticalStackLayout
-      Padding="10"
-      BackgroundColor="Transparent"
-      Spacing="15">
-      <ScrollView
-        x:Name="contentScrollView"
-        Grid.Row="2"
-        Grid.Column="1"
-        Grid.ColumnSpan="2">
+  <Grid Padding="20,0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid Grid.Row="0">
+      <StackLayout
+        x:Name="titleSTL"
+        Orientation="Horizontal"
+        Spacing="0">
+        <Image
+          HeightRequest="40"
+          Source="rightaroow.png"
+          WidthRequest="40" />
+        <Label
+          x:Name="titleLBL"
+          Margin="0,5,0,0"
+          FontAttributes="Bold"
+          FontSize="Large"
+          Text="Partner"
+          TextColor="#27ae60" />
+      </StackLayout>
+    </Grid>
+    <Grid Grid.Row="1">
+      <Grid>
+        <!--  Frame with rounded border  -->
         <StackLayout
-          Margin="-6,0,0,0"
-          Padding="20,10,20,20"
-          BackgroundColor="White">
-          <StackLayout
-            x:Name="titleSTL"
-            Orientation="Horizontal"
-            Spacing="0">
-            <Image
-              HeightRequest="40"
-              Source="rightaroow.png"
-              WidthRequest="40" />
-            <Label
-              x:Name="titleLBL"
-              Margin="0,5,0,0"
-              FontAttributes="Bold"
-              FontSize="Medium"
-              Text="Country"
-              TextColor="#27ae60" />
-          </StackLayout>
-          <StackLayout
-            Padding="0"
+          Padding="0"
+          HorizontalOptions="FillAndExpand"
+          Orientation="Horizontal">
+          <Label
+            FontSize="Large"
             HorizontalOptions="FillAndExpand"
-            Orientation="Horizontal">
-            <Label
-              FontSize="Medium"
-              HorizontalOptions="FillAndExpand"
-              LineBreakMode="WordWrap">
-              <Label.FormattedText>
-                <FormattedString>
-                  <Span FontAttributes="Bold" Text="Please select your country" />
-                </FormattedString>
-              </Label.FormattedText>
-            </Label>
-          </StackLayout>
-          <StackLayout
-            Margin="0,20,0,0"
-            HorizontalOptions="Center"
-            Orientation="Horizontal"
-            Spacing="10">
-            <Border
-              x:Name="borderOption1"
-              Padding="3"
-              BackgroundColor="Transparent"
-              HeightRequest="100"
-              Stroke="Transparent"
-              StrokeThickness="7"
-              WidthRequest="100">
-              <Border.StrokeShape>
-                <RoundRectangle CornerRadius="55" />
-              </Border.StrokeShape>
-              <Image
-                x:Name="french"
-                HeightRequest="100"
-                Source="sn.png"
-                WidthRequest="100">
-                <Image.GestureRecognizers>
-                  <!--<TapGestureRecognizer Tapped="OnImage1Tapped" />-->
-                </Image.GestureRecognizers>
-              </Image>
-            </Border>
-            <Border
-              x:Name="borderOption2"
-              Padding="3"
-              BackgroundColor="Transparent"
-              HeightRequest="100"
-              Stroke="Transparent"
-              StrokeThickness="7"
-              WidthRequest="100">
-              <Border.StrokeShape>
-                <RoundRectangle CornerRadius="55" />
-              </Border.StrokeShape>
-              <Image
-                x:Name="english"
-                HeightRequest="100"
-                Source="gmd.png"
-                WidthRequest="100">
-                <Image.GestureRecognizers>
-                  <!--<TapGestureRecognizer Tapped="OnImage2Tapped" />-->
-                </Image.GestureRecognizers>
-              </Image>
-            </Border>
-          </StackLayout>
+            LineBreakMode="WordWrap">
+            <Label.FormattedText>
+              <FormattedString>
+                <Span FontAttributes="Bold" Text="Select a partner" />
+              </FormattedString>
+            </Label.FormattedText>
+          </Label>
+        </StackLayout>
+      </Grid>
+    </Grid>
+    <Grid Grid.Row="2" Margin="0,20,0,0">
+      <ScrollView
+        HorizontalOptions="FillAndExpand"
+        HorizontalScrollBarVisibility="Never"
+        Orientation="Horizontal"
+        VerticalOptions="StartAndExpand">
+        <StackLayout
+          Padding="10,0"
+          Orientation="Horizontal"
+          Spacing="15">
+          <Border
+            x:Name="AfrimoneyBorder"
+            Padding="0"
+            HeightRequest="100"
+            Stroke="LightGray"
+            StrokeShape="RoundRectangle 100"
+            StrokeThickness="5"
+            WidthRequest="100">
+            <Border.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnPartnerTapped" />
+            </Border.GestureRecognizers>
+            <Image Aspect="AspectFit" Source="englishCopy.png" />
+          </Border>
+
+          <Border
+            x:Name="MatontineBorder"
+            Padding="0"
+            HeightRequest="100"
+            Stroke="LightGray"
+            StrokeShape="RoundRectangle 100"
+            StrokeThickness="5"
+            WidthRequest="100">
+            <Border.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnPartnerTapped" />
+            </Border.GestureRecognizers>
+            <Image Aspect="AspectFit" Source="community.png" />
+          </Border>
+
+          <Border
+            x:Name="Partner3Border"
+            Padding="0"
+            HeightRequest="100"
+            Stroke="LightGray"
+            StrokeShape="RoundRectangle 100"
+            StrokeThickness="5"
+            WidthRequest="100">
+            <Border.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnPartnerTapped" />
+            </Border.GestureRecognizers>
+            <Image Aspect="AspectFit" Source="partner3_logo.png" />
+          </Border>
+
         </StackLayout>
       </ScrollView>
-    </VerticalStackLayout>
-  </ContentPage.Content>
+    </Grid>
+  </Grid>
 </ContentPage>

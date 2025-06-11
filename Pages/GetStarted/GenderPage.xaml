@@ -1,12 +1,104 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MatontineDigitalApp.Pages.GetStarted.GenderPage"
-             Title="GenderPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+  x:Class="MatontineDigitalApp.Pages.GetStarted.GenderPage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  Title="GenderPage"
+  ControlTemplate="{StaticResource MainPageTemplate}">
+  <Grid Padding="20,0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <Grid Grid.Row="0">
+      <StackLayout
+        x:Name="titleSTL"
+        Orientation="Horizontal"
+        Spacing="0"
+        VerticalOptions="Start">
+        <Image
+          HeightRequest="40"
+          Source="rightaroow.png"
+          WidthRequest="40" />
+        <Label
+          x:Name="titleLBL"
+          Margin="0,5,0,0"
+          FontAttributes="Bold"
+          FontSize="Large"
+          Text="Gender"
+          TextColor="#27ae60" />
+      </StackLayout>
+    </Grid>
+    <Grid Grid.Row="1">
+      <Grid>
+        <StackLayout
+          Padding="0"
+          HorizontalOptions="FillAndExpand"
+          Orientation="Horizontal">
+          <Label
+            FontSize="Medium"
+            HorizontalOptions="FillAndExpand"
+            LineBreakMode="WordWrap">
+            <Label.FormattedText>
+              <FormattedString>
+                <Span FontAttributes="Bold" Text="Please select your gender" />
+              </FormattedString>
+            </Label.FormattedText>
+          </Label>
+        </StackLayout>
+      </Grid>
+    </Grid>
+    <Grid Grid.Row="2">
+      <StackLayout
+        Margin="0,20,0,0"
+        HorizontalOptions="Center"
+        Orientation="Horizontal"
+        Spacing="10">
+        <Border
+          x:Name="borderOption1"
+          Padding="3"
+          BackgroundColor="Transparent"
+          HeightRequest="100"
+          Stroke="Transparent"
+          StrokeThickness="7"
+          WidthRequest="100">
+          <Border.StrokeShape>
+            <RoundRectangle CornerRadius="55" />
+          </Border.StrokeShape>
+          <Image
+            x:Name="female"
+            HeightRequest="100"
+            Source="F_avatar_white-back.png"
+            WidthRequest="100">
+            <!--<Image.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImage1Tapped" />
+            </Image.GestureRecognizers>-->
+          </Image>
+        </Border>
+        <Border
+          x:Name="borderOption2"
+          Padding="3"
+          BackgroundColor="Transparent"
+          HeightRequest="100"
+          Stroke="Transparent"
+          StrokeThickness="7"
+          WidthRequest="100">
+          <Border.StrokeShape>
+            <RoundRectangle CornerRadius="55" />
+          </Border.StrokeShape>
+          <Image
+            x:Name="male"
+            HeightRequest="100"
+            Source="M_avatar_transparent-back.png"
+            WidthRequest="100">
+            <!--<Image.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImage2Tapped" />
+            </Image.GestureRecognizers>-->
+          </Image>
+        </Border>
+      </StackLayout>
+    </Grid>
+  </Grid>
 </ContentPage>

@@ -14,8 +14,6 @@
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
 
-    <!--  ColumnDefinitions को यहाँ से हटा दिया गया है  -->
-
     <Grid Grid.Row="0">
       <Label
         FontAttributes="Bold"
@@ -25,7 +23,6 @@
     </Grid>
     <Grid Grid.Row="1">
       <Grid>
-        <!--  Frame with rounded border  -->
         <Border
           Padding="15"
           BackgroundColor="White"
@@ -91,34 +88,6 @@
             </FormattedString>
           </Label.FormattedText>
         </Label>
-        <Label
-          x:Name="frlangauge"
-          Grid.Row="0"
-          Grid.RowSpan="2"
-          Grid.Column="1"
-          ClassId="dst"
-          FontSize="15"
-          HorizontalTextAlignment="Start"
-          IsVisible="false">
-          <Label.FormattedText>
-            <FormattedString>
-              <Span StyleId="data" Text="Je prends connaissance et accepte les " />
-              <Span Text="Conditions d'utilisation " TextColor="#55aaff">
-                <!--<Span.GestureRecognizers>
-                  <TapGestureRecognizer Tapped="termsOfUse" />
-                </Span.GestureRecognizers>-->
-              </Span>
-              <Span Text="ainsi que la " />
-              <Span Text="Politique de Confidentialité " TextColor="#55aaff">
-                <!--<Span.GestureRecognizers>
-                  <TapGestureRecognizer Tapped="privacyPolicy" />
-                </Span.GestureRecognizers>-->
-              </Span>
-              <Span Text="de MaTontine." />
-            </FormattedString>
-          </Label.FormattedText>
-        </Label>
-
       </Grid>
     </Grid>
   </Grid>
