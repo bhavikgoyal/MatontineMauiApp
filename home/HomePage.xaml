@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<c:MyContentPageWithTemplate xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                             x:Class="MatontineDigitalApp.home.HomePage"
-                             xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
-                             xmlns:local="clr-namespace:MatontineDigitalApp"
-                             xmlns:homeControls="clr-namespace:MatontineDigitalApp.home"
-                             xmlns:home="clr-namespace:MatontineDigitalApp.home" 
-                             Shell.NavBarIsVisible="False"
-  >
+<c:MyContentPageWithTemplate
+  x:Class="MatontineDigitalApp.home.HomePage"
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+  xmlns:home="clr-namespace:MatontineDigitalApp.home"
+  xmlns:homeControls="clr-namespace:MatontineDigitalApp.home"
+  xmlns:local="clr-namespace:MatontineDigitalApp"
+  Shell.NavBarIsVisible="False">
 
   <!--<c:MyContentPageWithTemplate.IconImageSource>
     <FontImageSource FontFamily="Material" Glyph=""/>
@@ -16,52 +16,68 @@
   <c:MyContentPageWithTemplate.TemplateBody>
 
     <Grid RowDefinitions="Auto, Auto, *, Auto" RowSpacing="0">
-      
-      <Label x:Name="welcomeLbl" Text="Welcome Back Awa!" 
-         Grid.Row="0"
-         FontAttributes="Bold"  
-         Margin="40, 0, 0, 0"/>
-      <Label x:Name="regionCuntryLbl" Text="Guediawye, Senegal" 
-         Grid.Row="1"
-         Margin="40, 0, 0, 10"/>
-      
-      <StackLayout Spacing="4"  
-                  Grid.Row="2">
 
-        <homeControls:HomePageMenuItemView x:Name="communityMenuItem"
-                                           Title="Community" 
-                                           Image="community.png" />
+      <Label
+        x:Name="welcomeLbl"
+        Grid.Row="0"
+        Margin="40,0,0,0"
+        FontAttributes="Bold"
+        Text="Welcome Back Awa!" />
+      <Label
+        x:Name="regionCuntryLbl"
+        Grid.Row="1"
+        Margin="40,0,0,10"
+        Text="Guediawye, Senegal" />
 
-        <homeControls:HomePageMenuItemView x:Name="membersMenuItem"
-                                           Title="Members"
-                                           Image="members.png" />
+      <StackLayout Grid.Row="2" Spacing="4">
 
-        <homeControls:HomePageMenuItemView x:Name="reportingMenuItem"
-                                           Title="Reporting"
-                                           Image="reporting.png" />
+        <homeControls:HomePageMenuItemView
+          x:Name="communityMenuItem"
+          Title="Community"
+          Image="community.png" />
 
-        <homeControls:HomePageMenuItemView x:Name="servicesMenuItem"
-                                           Title="Services"
-                                           Image="services.png" />
+        <homeControls:HomePageMenuItemView
+          x:Name="membersMenuItem"
+          Title="Members"
+          Image="members.png" />
 
-        <homeControls:HomePageMenuItemView x:Name="profileMenuItem"
-                                           Title="Profile"
-                                           Image="profile.png" />
+        <homeControls:HomePageMenuItemView
+          x:Name="reportingMenuItem"
+          Title="Reporting"
+          Image="reporting.png" />
 
-        <homeControls:HomePageMenuItemView x:Name="contactMenuItem"
-                                           Title="Contact"
-                                           Image="contact.png" />
+        <homeControls:HomePageMenuItemView
+          x:Name="servicesMenuItem"
+          Title="Services"
+          Image="services.png" />
 
-        <homeControls:HomePageMenuItemView x:Name="logoutMenuItem"
-                                           Title="Logout"
-                                           Image="logouticon.png" />
+        <homeControls:HomePageMenuItemView
+          x:Name="profileMenuItem"
+          Title="Profile"
+          Image="profile.png" />
+
+        <homeControls:HomePageMenuItemView
+          x:Name="contactMenuItem"
+          Title="Contact"
+          Image="contact.png" />
+
+        <homeControls:HomePageMenuItemView
+          x:Name="logoutMenuItem"
+          Title="Logout"
+          Image="logouticon.png" />
 
       </StackLayout>
 
-      <StackLayout Grid.Row="3" Spacing="0" Padding="0,40,0,0" WidthRequest="60" HorizontalOptions="EndAndExpand">
-        <Image HorizontalOptions="End"
-               VerticalOptions="EndAndExpand"
-               Source="matontinelogobackwhitesm.jpg" />
+      <StackLayout
+        Grid.Row="3"
+        Padding="0,40,0,0"
+        HorizontalOptions="EndAndExpand"
+        Spacing="0"
+        WidthRequest="60">
+        <Image
+          HorizontalOptions="End"
+          Source="matontinelogobackwhitesm.jpg"
+          VerticalOptions="EndAndExpand" />
       </StackLayout>
 
     </Grid>

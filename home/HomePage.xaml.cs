@@ -1,4 +1,5 @@
 ﻿using MatontineDigitalApp.Commons;
+using MatontineDigitalApp.Pages.Authentification;
 using MatontineDigitalApp.Pages.Signin;
 
 namespace MatontineDigitalApp.home 
@@ -24,6 +25,7 @@ namespace MatontineDigitalApp.home
       reportingMenuItem.HomeTab = HomeTabEnum.Tontines;
       servicesMenuItem.HomeTab = HomeTabEnum.Services;
 
+      logoutMenuItem.ItemClicked += LogoutMenuItem_ItemClicked;
       RefreshData();
 
     }
@@ -71,6 +73,22 @@ namespace MatontineDigitalApp.home
       {
         nextBorder.IsVisible = false;
       }
+    }
+    private async void LogoutMenuItem_ItemClicked(object? sender, EventArgs e)
+    {
+      bool confirm = await DisplayAlert("Logout", "Do you want to log out of the application?", "Yes", "No");
+      if (confirm)
+      {
+        CommonsResources.ConnectedUser = null;
+
+
+        SecureStorage.Remove("username");
+        SecureStorage.Remove("token");
+
+        App.Current.MainPage.Navigation.PushAsync(new AuthentificationPage());
+      }
+
+
     }
   }
 }
