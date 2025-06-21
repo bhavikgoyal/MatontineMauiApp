@@ -51,5 +51,5 @@ namespace MatontineDigitalApp.Model
 
     [JsonIgnore]
     public ImageSource FlagImage { get => Utils.Base64ToImage(FlagBase64); }
-  }
+    }
 }

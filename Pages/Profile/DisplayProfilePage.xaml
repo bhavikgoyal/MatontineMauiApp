@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:MyContentPageWithTemplate
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MatontineDigitalApp.Pages.Profile.DisplayProfilePage"
+    Title="Profile"
+    xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+    xmlns:cm="clr-namespace:MatontineDigitalApp.Commons.components.customs"
+    xmlns:local="clr-namespace:MatontineDigitalApp.ViewModelsUserProfile">
+
+  <c:MyContentPageWithTemplate.IconImageSource>
+    <FontImageSource FontFamily="Material" Glyph="&#xf233;" />
+  </c:MyContentPageWithTemplate.IconImageSource>
+
+  <c:MyContentPageWithTemplate.TemplateBody>
+    <StackLayout>
+      <cm:MySimpleSwitchView x:Name="mySimpleSwitchView"
+                                    BtnLeftText="manager"
+                                    BtnRigthText="setting">
+
+        <cm:MySimpleSwitchView.LeftContent>
+          <StackLayout>
+            <cm:MyEntry Text="{Binding CommunityName}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding FirstName}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding LastName}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding Gender}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding PhoneNumber}" IsReadOnly="True"/>
+          </StackLayout>
+        </cm:MySimpleSwitchView.LeftContent>
+
+        <cm:MySimpleSwitchView.RigthContent>
+          <StackLayout>
+            <cm:MyEntry Text="{Binding Country}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding Region}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding langue}" IsReadOnly="True"/>
+            <cm:MyEntry Text="{Binding Currency}" IsReadOnly="True" IsVisible="false"/>
+            <cm:MyEntry Text="{Binding DateFormat}" IsReadOnly="True" IsVisible="false"/>
+            <cm:MyEntry Text="{Binding ThousandsSeparator}" IsReadOnly="True" IsVisible="false"/>
+            <cm:MyEntry Text="{Binding DecimalSeparator}" IsReadOnly="True" IsVisible="false"/>
+              
+                        <cm:MyExtendedButton 
+                            Text="DELETE"
+                            BackgroundColor="#27ae60"
+                            TextColor="White"
+                            IsEnabled="true"
+                            CornerRadius="50"
+                            x:Name="DELETEEntry" />
+
+
+                    </StackLayout>
+        </cm:MySimpleSwitchView.RigthContent>
+
+      </cm:MySimpleSwitchView>
+    </StackLayout>
+  </c:MyContentPageWithTemplate.TemplateBody>
+</c:MyContentPageWithTemplate>

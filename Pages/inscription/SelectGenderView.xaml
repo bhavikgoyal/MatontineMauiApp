@@ -1,0 +1,59 @@
+<ContentView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MatontineDigitalApp.Pages.inscription.SelectGenderView"
+    BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="30" VerticalOptions="CenterAndExpand">
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="40">
+
+                <!-- Female Selection -->
+                <Border x:Name="femaleFrame" Stroke="#d2d2d7" StrokeThickness="4"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="Transparent"
+                    StrokeShape="RoundRectangle 60,60"
+                    >
+                    <Image x:Name="femaleImage"
+                           Source="favatarwhiteback.png"
+                             HeightRequest="120"
+                             WidthRequest="120"
+                             Opacity="0.5"
+                             Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFemaleTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+
+                <!-- Male Selection -->
+                <Border x:Name="maleFrame" Stroke="#d2d2d7" StrokeThickness="4"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="Transparent"
+                    StrokeShape="RoundRectangle 60,60"
+                    >
+                    <Image x:Name="maleImage"
+                             Source="m_avatar_white_back.png"
+                             HeightRequest="120"
+                             WidthRequest="120"
+                             Opacity="0.5"
+                             Aspect="AspectFit">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnMaleTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Border>
+
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentView>

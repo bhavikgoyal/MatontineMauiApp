@@ -29,7 +29,7 @@ namespace MatontineDigitalApp.Services
     Task<ResponseStatus> ValidationLoginAndTelephone([Body(BodySerializationMethod.UrlEncoded)] Credentials cre);
 
     [Post("/MaTontine2GetProfileData")]
-    Task<UserProfile> Login([Body(BodySerializationMethod.UrlEncoded)] Credentials cre);
+    Task<string> Login([Body(BodySerializationMethod.UrlEncoded)] Credentials cre);
 
     [Post("/MaTontine2GetSMSCode")]
     Task<Credentials> GetSMSCode([Body(BodySerializationMethod.UrlEncoded)] Credentials cre);
@@ -169,9 +169,9 @@ namespace MatontineDigitalApp.Services
     [Post("/MaTontineSendMail")]
     Task<ContacteDto> SendEmail([Body(BodySerializationMethod.UrlEncoded)] ContacteDto req);
 
-    //[Get("/MaTontineGetAppVersion")]
-    //Task<APPVSERSION> GetAppVersion(string app);
+		//[Get("/MaTontineGetAppVersion")]
+		//Task<APPVSERSION> GetAppVersion(string app);
 
-    /*  \Contacte */
-  }
+		/*  \Contacte */
+	}
 }

@@ -55,6 +55,12 @@ public partial class AuthentificationHomePage : MyContentPage
   {
     await Navigation.PushModalAsync(new AuthentificationPage());
   }
+  //private async void NavTosignInPage_Tapped(object sender, EventArgs e)
+  //{
+  //	await Navigation.PushModalAsync(new LoginPage.LoginPage());
+  //}
+
+
   //public async Task AppUpdate()
   //{
   //  var t = CrossLatestVersion.Current;

@@ -8,6 +8,7 @@ using MatontineDigitalApp.Services;
 using MatontineDigitalApp.ViewModels;
 using MatontineDigitalApp.home;
 using ContentPage = Microsoft.Maui.Controls.ContentPage;
+using Newtonsoft.Json;
 
 namespace MatontineDigitalApp.Pages.Authentification;
 
@@ -47,9 +48,9 @@ public partial class AuthentificationPage : ContentPage
 
     }));
     BindingContext = new LogInViewModel(Navigation);
-  }
+	}
 
-  private async Task InitFingerprintProcessAsync()
+	private async Task InitFingerprintProcessAsync()
   {
     aiLayout.IsVisible = true;
     var availability = await CrossFingerprint.Current.GetAvailabilityAsync(true);
@@ -150,129 +151,73 @@ public partial class AuthentificationPage : ContentPage
     }
     Connexion(textLogin, textPassword);
   }
-  //private async void Connexion(string login, string password)
-  //{
-  //  try
-  //  {
-  //    var credential = new Credentials { plogin = login, ppassword = password };
-  //    aiLayout.IsVisible = true;
-  //    var profile = await MaTontineAPIUtils.Instance.Login(credential);
+	private async void Connexion(string login, string password)
+	{
+		aiLayout.IsVisible = true;
+	
+		try
+		{
+			var credential = new Credentials { plogin = login, ppassword = password };
+		
+			string jsonResponse = await MaTontineAPIUtils.Instance.Login(credential);
+		
+			if (string.IsNullOrWhiteSpace(jsonResponse))
+			{
+			
+				await DisplayAlert("API Error", "Received an empty response from the server.", "OK");
+				aiLayout.IsVisible = false;
+				return;
+			}
 
-  //    if (profile.isconnected)
-  //    {
-  //      credential.plangue = profile.langue;
-  //      Preferences.Set("UserLG", profile.langue);
-  //      Preferences.Set("GESTIONNAIREID", profile.profile_community_id);
-  //      if (profile != null &&
-  //     profile.ListMembers != null &&
-  //     profile.ListMembers.Count > 0 &&
-  //     profile.ListMembers[0] != null &&
-  //     profile.ListMembers[0].ListContributionHistory != null &&
-  //     profile.ListMembers[0].ListContributionHistory.Count > 0 &&
-  //     profile.ListMembers[0].ListContributionHistory[0] != null &&
-  //     !string.IsNullOrEmpty(profile.ListMembers[0].ListContributionHistory[0].ServiceCode))
-  //      {
-  //        Preferences.Set("GROUPNAME", profile.ListMembers[0].ListContributionHistory[0].ServiceCode);
-  //      }
+		
+			try
+			{
+				var profile = JsonConvert.DeserializeObject<UserProfile>(jsonResponse);
+				
+				if (profile != null && profile.isconnected)
+				{
+					
+					aiLayout.IsVisible = false;
+					await App.Current.MainPage.Navigation.PushAsync(new HomePage());
+				}
+				else
+				{
+					
+					await DisplayAlert("Login Failed", profile?.errormessage ?? "Could not connect.", "OK");
+				}
+			}
+			catch (Newtonsoft.Json.JsonSerializationException serEx)
+			{
+				
+				await DisplayAlert("JSON Serialization Error!", $"Message: {serEx.Message}\n\nPath: {serEx.Path}\nLine: {serEx.LineNumber}, Pos: {serEx.LinePosition}", "OK");
+			}
+			catch (Newtonsoft.Json.JsonReaderException readEx)
+			{
+			
+				await DisplayAlert("JSON Reader Error!", $"Message: {readEx.Message}\n\nPath: {readEx.Path}\nLine: {readEx.LineNumber}, Pos: {readEx.LinePosition}", "OK");
+			}
+			catch (Exception deserEx)
+			{
+			
+				await DisplayAlert("Deserialization Error!", $"Message: {deserEx.Message}\n\nJSON was:\n{jsonResponse}", "OK");
+			}
+		}
+		catch (Exception ex)
+		{
+		
+			await DisplayAlert("General Error", ex.Message, "OK");
+		}
+		finally
+		{
+			if (aiLayout.IsVisible)
+			{
+				aiLayout.IsVisible = false;
+			}
+			
+		}
+	}
 
-  //      Preferences.Remove("MGAINCOUNTS");
-  //      if (profile.ListMgains != null)
-  //      {
-  //        Preferences.Set("LASTDRAWDATE", profile.ListMgains[0].dategain);
-  //        Preferences.Set("MGAINCOUNTS", profile.ListMgains.Count);
-  //      }
-  //      Preferences.Set("AUTOPAY", profile.autopay);
-  //      CommonsResources.ConnectedUser = profile;
-  //      CommonsResources.credentials = credential;
-
-  //      await MyDB.Instance.SaveParameterAsync(rememberMeCheckBox.IsChecked, useFingerPrintCheckBox.IsChecked, credential);
-
-  //      if (credential.plangue != MyTranslator.CurrentLanguageCD)
-  //      {
-  //        await MaTontineAPIUtils.GetTranslateData(this, null, credential.plangue);
-
-  //        //var translateData = await MaTontineAPIUtils.Instance.GetTranslateData(credential);
-  //        //MyTranslator.InitTranslateData(translateData, credential.plangue);
-  //      }
-  //      var listData = await MaTontineAPIUtils.Instance.GetListData(CommonsResources.credentials);
-  //      if (listData != null)
-  //      {
-  //        CommonsResources.listData = listData;
-  //      }
-  //      aiLayout.IsVisible = false;
-  //      App.Current.MainPage.Navigation.PushAsync(new HomeTabbedPage());
-  //    }
-  //    else
-  //    {
-  //      await DisplayAlert(CommonsResources.AppName, profile.errormessage,
-  //          Translate.ok);
-  //    }
-  //  }
-  //  catch (Exception ex)
-  //  {
-  //    aiLayout.IsVisible = false;
-  //    await DisplayAlert(CommonsResources.AppName, ex.Message, Translate.ok);
-  //  }
-  //  finally
-  //  {
-  //    aiLayout.IsVisible = false;
-  //  }
-  //}
-
-
-  private async void Connexion(string login, string password)
-  {
-    try
-    {
-      aiLayout.IsVisible = true;
-
-      // Set default language and dummy user data
-      Preferences.Set("UserLG", "fr");
-      Preferences.Set("GESTIONNAIREID", "test-id");
-      Preferences.Set("GROUPNAME", "test-group");
-      Preferences.Set("AUTOPAY", false);
-      Preferences.Set("MGAINCOUNTS", 0);
-
-      // Create dummy user profile
-      CommonsResources.ConnectedUser = new UserProfile
-      {
-        isconnected = true,
-        langue = "fr",
-        profile_community_id = "test-id",
-        ListMembers = new List<MemberDto>(),
-        ListMgains = new List<MgainsDto>(),
-        autopay = false
-      };
-
-      CommonsResources.credentials = new Credentials
-      {
-        plogin = login,
-        ppassword = password,
-        plangue = "fr"
-      };
-
-      // Save parameters locally
-      await MyDB.Instance.SaveParameterAsync(
-          rememberMeCheckBox.IsChecked,
-          useFingerPrintCheckBox.IsChecked,
-          CommonsResources.credentials);
-
-      aiLayout.IsVisible = false;
-
-      // Navigate to home page directly
-      await App.Current.MainPage.Navigation.PushAsync(new HomePage());
-    }
-    catch (Exception ex)
-    {
-      await DisplayAlert(CommonsResources.AppName, ex.Message, Translate.ok);
-    }
-    finally
-    {
-      aiLayout.IsVisible = false;
-    }
-  }
-
-  private async void OnBackButtonClicked(object sender, TappedEventArgs e)
+	private async void OnBackButtonClicked(object sender, TappedEventArgs e)
   {
     try
     {

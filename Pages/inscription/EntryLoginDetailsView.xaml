@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates:MyDefaultTemplateInfosView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:templates="clr-namespace:MatontineDigitalApp.Commons.templates"
+    xmlns:customs="clr-namespace:MatontineDigitalApp.Commons.components.customs"
+    x:Class="MatontineDigitalApp.Pages.inscription.EntryLoginDetailsView">
+
+  <templates:MyDefaultTemplateInfosView.Content>
+    <VerticalStackLayout 
+            Spacing="10"
+            Padding="20">
+      <customs:MyEntry 
+                x:Name="loginEntry" 
+                Placeholder="Login" />
+      <customs:MyEntry
+                x:Name="mobileNumberEntry"
+                Placeholder="Mobile Number"
+                Keyboard="Telephone" />
+      <customs:MyEntry
+                x:Name="passwordEntry"
+                Placeholder="Password"
+                IsPassword="True" />
+      <customs:MyEntry 
+                x:Name="retypePasswordEntry" 
+                Placeholder="Retype Password"
+                IsPassword="True"
+                ReturnType="Done" />
+    </VerticalStackLayout>
+  </templates:MyDefaultTemplateInfosView.Content>
+</templates:MyDefaultTemplateInfosView>

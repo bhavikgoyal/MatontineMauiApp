@@ -48,18 +48,15 @@ namespace MatontineDigitalApp.Commons
     }
 
 
-    public static ImageSource Base64ToImage(string base64)
-    {
-      if (string.IsNullOrWhiteSpace(base64))
-      {
-        return null;
-      }
+        public static ImageSource Base64ToImage(string base64)
+        {
+            if (string.IsNullOrWhiteSpace(base64))
+                return null;
 
-      return ImageSource.FromStream(() => {
-        return new MemoryStream(Convert.FromBase64String(base64));
-      });
-    }
-
+            byte[] imageBytes = Convert.FromBase64String(base64);
+            return ImageSource.FromStream(() => new MemoryStream(imageBytes));
+        }
+    
 
     public static string ClearFormatText(string text, string currentFormat)
     {

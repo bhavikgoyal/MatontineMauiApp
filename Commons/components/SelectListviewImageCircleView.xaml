@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MatontineDigitalApp.Commons.components"
+             xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+           
+             x:Class="MatontineDigitalApp.Commons.components.SelectListviewImageCircleView">
+
+    <ContentView.Content>
+        <StackLayout VerticalOptions="Start">
+
+            <CollectionView x:Name="listView" ItemsSource="{Binding MyItems}" VerticalOptions="Start" HeightRequest="124">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Horizontal" VerticalItemSpacing="0" HorizontalItemSpacing="0"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5">
+                            <Frame BorderColor="Transparent"
+                   BackgroundColor="{Binding SelectedColor}"
+                   HasShadow="False"
+                   HeightRequest="114"
+                   WidthRequest="114"
+                   CornerRadius="114"
+                   Padding="0">
+                                <Frame.Effects>
+                                    <!-- Ensure TouchEffect is bound correctly -->
+                                    <TouchEffect Command="{Binding Path=BindingContext.MyCommand, Source={x:Reference listView}}"
+                                     CommandParameter="{Binding .}" />
+                                </Frame.Effects>
+
+                                <Frame BorderColor="Transparent"
+                       BackgroundColor="Transparent"
+                       HasShadow="True"
+                       HeightRequest="100"
+                       WidthRequest="100"
+                       CornerRadius="100"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Padding="0">
+                                    <Grid WidthRequest="100">
+                                        <StackLayout>
+                                            <Image Source="{Binding MyImage}"
+                                   HeightRequest="100"
+                                   WidthRequest="100"
+                                   Aspect="AspectFit"
+                                   VerticalOptions="CenterAndExpand"/>
+                                        </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

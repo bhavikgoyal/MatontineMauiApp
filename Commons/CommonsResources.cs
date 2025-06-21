@@ -15,9 +15,9 @@ namespace MatontineDigitalApp.Commons
     public static UserProfile ConnectedUser { get; set; } = new UserProfile();
     public static Credentials credentials { get; set; } = new Credentials();
 
-    public static List<CountryDto> Countries { get => listData.lstpays; }
+        public static List<CountryDto> Countries { get; set; }
 
-    private static string _RegionsCountryCode;
+        private static string _RegionsCountryCode;
     public static string RegionsCountryCode
     {
       get => _RegionsCountryCode;
@@ -220,9 +220,9 @@ namespace MatontineDigitalApp.Commons
     public static List<SimpleListItemData> FilterCommunauteData { get => ConnectedUser.lstcommunaute; }
     public static List<SimpleListItemData> FilterMembreData { get => ConnectedUser.lstmembre; }
     public static List<SimpleListItemData> FilterServiceData { get => ConnectedUser.lstservice; }
+        public static IEnumerable<object> Country { get; internal set; }
 
-
-    public static List<ServiceDto> GetServices(ServiceDto.CategoryServiceEnum cat)
+        public static List<ServiceDto> GetServices(ServiceDto.CategoryServiceEnum cat)
     {
         if (ConnectedUser.ListServices is null)
         {
@@ -422,7 +422,7 @@ namespace MatontineDigitalApp.Commons
                     Nom = "Yakhar02",
                     Montant = "8000",
                     DateDemarage = DateTime.Now,
-                    MemberCount = 22,
+                   MemberCount = 22,
                     TypePeriodiciteDescription = "Monthly",
                     Periodicite = "1",
                     NombreDeGagnant = "1",
