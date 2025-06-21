@@ -78,7 +78,7 @@ namespace MatontineDigitalApp.Commons
         HideLoadingEx(page);
       };
 
-      MaTontineAPIUtils.httpCall(page, funcHttpCall, onFinish);
+      //MaTontineAPIUtils.httpCall(page, funcHttpCall, onFinish);
     }
 
     public static void httpCallNoLoadingEx(this Page page, Func<Task> funcHttpCall)
@@ -88,7 +88,7 @@ namespace MatontineDigitalApp.Commons
         HideLoadingEx(page);
       };
 
-      MaTontineAPIUtils.httpCall(page, funcHttpCall, onFinish);
+      //MaTontineAPIUtils.httpCall(page, funcHttpCall, onFinish);
     }
 
     public static bool isTabletEx(this Microsoft.Maui.Controls.Page page)

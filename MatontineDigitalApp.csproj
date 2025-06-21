@@ -46,8 +46,14 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#27ae60" BaseSize="200,200" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		<!--<MauiImage Include="Resources\Images\*" />-->
+		<!--<MauiImage Include="Resources\Images\**\*.*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />-->
+	
+			<MauiImage Include="Resources\Images\**\*.*" />
+			<MauiImage Update="Resources\Images\favatarwhiteback.png" Resize="True" BaseSize="100,100" />
+		
+
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -73,6 +79,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Commons\components\SelectListviewImageCircleView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Commons\components\customs\MyEntry.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -82,10 +91,19 @@
 	  <MauiXaml Update="Commons\components\customs\MySimpleSwitchView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Commons\components\ListSelectorView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Commons\components\MyPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Commons\MyContentPageWithTemplate.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Commons\templates\MyDefaultTemplate.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Commons\templates\MyDefaultTemplateInfosSelectorView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="community\view\Management\ListCommunityView.xaml">
@@ -163,7 +181,37 @@
 	  <MauiXaml Update="Pages\GetStarted\VerifyMangerDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\inscription\EntryLoginDetailsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\inscription\InscriptionMasterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\inscription\SelectContryView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\inscription\SelectGenderView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\inscription\SelectLanguageView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\inscription\SelectRegionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\LoginPage\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Members\CreateMemberPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Members\ListMemberPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Profile\DisplayProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Profile\EditProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\Signin\LoginHome.xaml">
@@ -194,6 +242,12 @@
 
 	<ItemGroup>
 	  <Folder Include="Pages\services\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Commons\components\SelectListviewImageCircleView.xaml.cs">
+	    <DependentUpon>SelectListviewImageCircleView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

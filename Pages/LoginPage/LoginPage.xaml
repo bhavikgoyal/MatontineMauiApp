@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c:MyContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+                 xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               
+                 Title="Login"
+                 BackgroundColor="White">
+
+  <ScrollView>
+    <StackLayout Padding="20" Spacing="15">
+      <!-- Title -->
+      <Label Text="Login"
+                   FontAttributes="Bold"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+      <!-- Username Entry -->
+      <Entry x:Name="loginEntry"
+                   Placeholder="Username"
+                   Text="{Binding Plogin}" />
+
+      <!-- Password Entry -->
+      <Entry x:Name="passwordEntry"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   Text="{Binding Ppassword}" />
+
+      <!-- Remember Me -->
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <CheckBox x:Name="rememberMeCheckBox"
+                          IsChecked="{Binding RememberMe}" />
+        <Label Text="Remember Me"
+                       VerticalOptions="Center" />
+      </StackLayout>
+
+      <!-- Use Fingerprint -->
+      <StackLayout Orientation="Horizontal" Spacing="5">
+        <CheckBox x:Name="useFingerPrintCheckBox"
+                          IsChecked="{Binding UseFingerPrint}" />
+        <Label Text="Use Fingerprint"
+                       VerticalOptions="Center" />
+      </StackLayout>
+
+      <!-- Activity Indicator -->
+      <ActivityIndicator IsRunning="{Binding IsBusy}"
+                               IsVisible="{Binding IsBusy}" />
+
+      <!-- Login Button -->
+      <Button Text="Login"
+                    Command="{Binding SubmitCommand}" />
+    </StackLayout>
+  </ScrollView>
+
+</c:MyContentPage>

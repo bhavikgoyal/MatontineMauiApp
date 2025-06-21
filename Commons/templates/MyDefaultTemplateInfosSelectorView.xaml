@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MatontineDigitalApp"
+             xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+             xmlns:template="clr-namespace:MatontineDigitalApp.Commons.templates"
+             x:Class="MatontineDigitalApp.Commons.templates.MyDefaultTemplateInfosSelectorView">
+
+  <!-- Embedding ListSelectorView inside the ContentView -->
+  <CollectionView 
+        x:Name="listSelectorView"
+        SelectionMode="Single">
+    <CollectionView.ItemTemplate>
+      <DataTemplate>
+        <Grid Padding="10">
+          <Label Text="{Binding Title}" />
+          <Label Text="{Binding SubTitle}" />
+        </Grid>
+      </DataTemplate>
+    </CollectionView.ItemTemplate>
+  </CollectionView>
+
+</ContentView>

@@ -67,10 +67,22 @@ namespace MatontineDigitalApp.Commons.components.customs
       }
     }
 
-    public View CenterContent { get; set; }
-    public View RigthContent { get; set; }
 
-    private void SetCurrentView(View v)
+    private View _RigthContent;
+    public View RigthContent
+    {
+      get => _RigthContent;
+      set
+      {
+        SetCurrentView(value);
+        _RigthContent = value;
+      }
+    }
+    public View CenterContent { get; set; }
+   //public View RigthContent { get; set; }
+		public string BtnRightText { get; internal set; }
+
+		private void SetCurrentView(View v)
     {
       currentContent = v;
       BodyContent.Content = v;

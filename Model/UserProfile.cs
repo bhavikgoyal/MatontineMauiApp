@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using JsonIgnoreAttribute = Newtonsoft.Json.JsonIgnoreAttribute;
 
 namespace MatontineDigitalApp.Model
 {
@@ -53,14 +52,14 @@ namespace MatontineDigitalApp.Model
 
 
 
-    [JsonIgnore]
+    [System.Text.Json.Serialization.JsonIgnore]
     public bool IsWoman { get => profile_gender == "FEMME"; }
 
     [JsonProperty("profile_gender_description")]
     public string profile_gender_description { get; set; }
 
     private CountryDto _CountryDto;
-    [JsonIgnore()]
+    [System.Text.Json.Serialization.JsonIgnore()]
     public CountryDto CountryDto
     {
       get => _CountryDto;
@@ -198,8 +197,9 @@ namespace MatontineDigitalApp.Model
 
     [JsonProperty("lstmgains")]
     public List<MgainsDto> ListMgains { get; set; }
+        public string CountryCode { get; internal set; }
 
-    public CountryDto GetCountryDto()
+        public CountryDto GetCountryDto()
     {
       return CommonsResources.Countries.Find((e) => e.Code == this.profile_country);
     }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:MatontineDigitalApp.ViewModelsUserProfile"
+    xmlns:c="clr-namespace:MatontineDigitalApp.Commons"
+    xmlns:cm="clr-namespace:MatontineDigitalApp.Commons.components.customs"
+    x:Class="MatontineDigitalApp.Pages.Profile.EditProfilePage"
+    Title="Edit Profile">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <cm:MySimpleSwitchView x:Name="mySimpleSwitchView"
+                                   BtnLeftText="manager"
+                                   BtnRigthText="setting">
+
+                <!-- Left Tab Content -->
+                <cm:MySimpleSwitchView.LeftContent>
+                    <StackLayout Spacing="10">
+                        <cm:MyEntry Placeholder="Community Name" Text="{Binding CommunityName}"  />
+                       
+                        <cm:MyEntry Placeholder="First Name" Text="{Binding FirstName}" />
+
+                        <cm:MyEntry Placeholder="Last Name" Text="{Binding LastName}" />
+                        <cm:MyEntry
+                           x:Name="GenderEntry"
+                           Text="{Binding Gender}"
+                           Placeholder="Select Gender"
+                           IsReadOnly="True">
+                            <cm:MyEntry.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ManagerGenderEntry_Tapped" />
+                            </cm:MyEntry.GestureRecognizers>
+                        </cm:MyEntry>
+
+
+                        <cm:MyEntry Placeholder="Phone Number" Text="{Binding PhoneNumber}" />
+                    </StackLayout>
+                </cm:MySimpleSwitchView.LeftContent>
+
+
+
+               
+                <!-- Right Tab Content -->
+                <cm:MySimpleSwitchView.RigthContent>
+                    <StackLayout Spacing="10">
+                        <cm:MyEntry Text="{Binding Country}" 
+            Placeholder="Select Country"
+            IsReadOnly="True">
+                            <cm:MyEntry.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="CountryEntry_Tapped" />
+                            </cm:MyEntry.GestureRecognizers>
+                        </cm:MyEntry>
+
+
+
+
+                        <cm:MyEntry Placeholder="Region" Text="{Binding Region}" />
+                        <cm:MyEntry Placeholder="langue" Text="{Binding langue}" />
+
+                        <cm:MyExtendedButton 
+                            Text="DELETE"
+                            BackgroundColor="#27ae60"
+                                  TextColor="White"
+                                  IsEnabled="true"
+                                  CornerRadius="50"
+                                  x:Name="DELETEEntry" />
+
+                        <Button Text="Update Profile"
+                                Clicked="UpdateProfile_Clicked"
+                                BackgroundColor="#27ae60"
+                                TextColor="White" />
+                    </StackLayout>
+                </cm:MySimpleSwitchView.RigthContent>
+
+            </cm:MySimpleSwitchView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

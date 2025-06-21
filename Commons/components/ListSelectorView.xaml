@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatontineDigitalApp.Commons.components.ListSelectorView">
+
+  <VerticalStackLayout Padding="10">
+    <Label x:Name="lblItemSelected" 
+           TextColor="#2980b9" 
+           FontAttributes="Bold" 
+           FontSize="Medium" />
+
+    <CollectionView 
+        x:Name="listView"
+        SelectionMode="Single"
+        SelectionChanged="CollectionView_SelectionChanged">
+      <CollectionView.ItemTemplate>
+        <DataTemplate>
+          <Label Text="{Binding Description}" 
+                 Padding="10"
+                 FontSize="16" />
+        </DataTemplate>
+      </CollectionView.ItemTemplate>
+    </CollectionView>
+  </VerticalStackLayout>
+</ContentView>

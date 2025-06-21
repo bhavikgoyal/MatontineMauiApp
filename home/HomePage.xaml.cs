@@ -1,5 +1,8 @@
 ﻿using MatontineDigitalApp.Commons;
 using MatontineDigitalApp.Pages.Authentification;
+using MatontineDigitalApp.Pages.Profile;
+using MatontineDigitalApp.Model;
+using MatontineDigitalApp.ViewModelsUserProfile;
 using MatontineDigitalApp.Pages.Signin;
 
 namespace MatontineDigitalApp.home 
@@ -26,7 +29,9 @@ namespace MatontineDigitalApp.home
       servicesMenuItem.HomeTab = HomeTabEnum.Services;
 
       logoutMenuItem.ItemClicked += LogoutMenuItem_ItemClicked;
-      RefreshData();
+			profileMenuItem.ItemClicked += ProfileMenuItem_ItemClicked;
+
+			RefreshData();
 
     }
     public override void RefreshData()
@@ -90,5 +95,15 @@ namespace MatontineDigitalApp.home
 
 
     }
-  }
+		//private async void NavTosignInPage_Tapped(object sender, TappedEventArgs e)
+		//{
+		//	await Navigation.PushModalAsync(new LoginPage());
+		//}
+
+		private void ProfileMenuItem_ItemClicked(object sender, EventArgs e)
+		{
+			
+			App.Current.MainPage.Navigation.PushAsync(new DisplayProfilePage());
+		}
+	}
 }

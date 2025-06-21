@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MatontineDigitalApp.Pages.Members.CreateMemberPage"
+             Title="CreateMemberPage">
+  <!--<Grid x:Name="MyTemplate" RowDefinitions="Auto, *, Auto">
+
+    <Label Grid.Row="0" Text="My Tontine" FontSize="Large" HorizontalOptions="Center"/>
+
+    <ContentView x:Name="PageContent" Grid.Row="1" Padding="15" />
+
+    <Grid Grid.Row="2" ColumnDefinitions="*,*" Padding="10">
+      <Button x:Name="LeftButton" Text="Back" Clicked="LeftButton_Clicked" />
+      <Button x:Name="RightButton" Grid.Column="1" Text="Next" Clicked="RightButton_Clicked" />
+    </Grid>
+
+  </Grid>-->
+</ContentPage>
